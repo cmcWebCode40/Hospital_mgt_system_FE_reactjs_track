@@ -1,0 +1,15 @@
+// ****media query for large desktop view***//
+@media (min-width:1000px) {
+    .header {
+        &>div:nth-child(2) {
+            float: right;
+            margin: -2.6rem 6.5rem 0 0;
+            div {
+                display: flex;
+            }
+        }
+    }
+    .navbar {
+        margin-right: 1rem;
+    }
+}

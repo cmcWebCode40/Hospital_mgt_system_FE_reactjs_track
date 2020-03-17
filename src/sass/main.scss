@@ -3,3 +3,48 @@
 @import "./utils";
 @import "./variables";
 //NB All main styling goes in here;
+//*******Header section styling*******//
+.header {
+    padding: .2rem .7rem;
+    border: 1px solid $text-color;
+    &__logo {
+        margin: .4rem 0 0 1.1rem;
+    }
+    &>div:nth-child(1) {
+        margin: 0 0 -.5rem 0;
+    }
+    &>div:nth-child(2) {
+        float: right;
+        margin: -2.6rem 5rem 0 0;
+        div {
+            display: flex;
+            margin: .3rem 0;
+            button {
+                background-color: $primary;
+                padding: 0 20px;
+                border-radius: $border-radius;
+                border: none;
+                color: $white;
+                margin: -.7rem .6rem 0 .6rem;
+                outline: none;
+                &:hover {
+                    background-color: darken($primary, 7%);
+                }
+            }
+        }
+    }
+}
+
+.navbar {
+    ul {
+        list-style: none;
+        li {
+            margin: 0 .7rem;
+        }
+        li a {
+            text-decoration: none;
+            color: $black;
+            font-weight: 700;
+        }
+    }
+}
