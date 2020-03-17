@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
+import Home from "./Home";
 
 // NB : All components are wrapped in the layout component
 
 const Layouts = () => {
-    return (
-        <div>
-           <h1>Hey Guys lets get started!</h1> 
-        </div>
-    )
-}
+	return (
+		<div>
+			<Home />
+		</div>
+	);
+};
 
-export default Layouts
+export default Layouts;
