@@ -1,3 +1,5 @@
+@import "./variables";
+@import "./mixins";
 // ****media query for large desktop view***//
 @media (min-width:1000px) {
     .header {
@@ -11,5 +13,65 @@
     }
     .navbar {
         margin-right: 1rem;
+    }
+}
+
+//******media query for mobile view*******//
+@media (max-width:768px) {
+    //****header****//
+    .header {
+        &>div:nth-child(2) {
+            display: none;
+        }
+    }
+    //***Landing page section****//
+    .home__content {
+        margin: .4rem auto;
+        padding: .2rem 2rem;
+        display: flex;
+        // flex-flow: row wrap;
+        @include displayCenter();
+        &-info {
+            margin: 2.3rem 0 0 1rem;
+            h1 {
+                font-size: 2rem !important;
+                span {
+                    color: $primary;
+                }
+            }
+            p {
+                margin: 0 0 2rem 0;
+            }
+        }
+        &-img {
+            display: none;
+            margin: 0 auto;
+            img {
+                margin: 1rem;
+                height: 100px !important;
+                width: 200px!important;
+            }
+        }
+    }
+}
+
+//******media query for Tablet view*******//
+@media (max-width:1085px) {
+    //****header****//
+    //***Landing page section****//
+    .home__content {
+        &-info {
+            margin: 2.3rem 0 0 1rem;
+            h1 {
+                font-size: 1.7rem !important;
+                margin: .2rem 0;
+                span {
+                    color: $primary;
+                }
+            }
+            p {
+                // margin: 0 0 2rem 0;
+            }
+        }
     }
 }

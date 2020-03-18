@@ -5,32 +5,21 @@
 //NB All main styling goes in here;
 //*******Header section styling*******//
 .header {
-    padding: .2rem .7rem;
+    // display: none;
+    padding: 0.2rem 0.7rem;
     border: 1px solid $text-color;
     &__logo {
-        margin: .4rem 0 0 1.1rem;
+        margin: 0.4rem 0 0 1.1rem;
     }
     &>div:nth-child(1) {
-        margin: 0 0 -.5rem 0;
+        margin: 0rem 0 -0.5rem 0;
     }
     &>div:nth-child(2) {
         float: right;
-        margin: -2.6rem 5rem 0 0;
+        margin: -3rem 5rem 0 0;
         div {
             display: flex;
-            margin: .3rem 0;
-            button {
-                background-color: $primary;
-                padding: 0 20px;
-                border-radius: $border-radius;
-                border: none;
-                color: $white;
-                margin: -.7rem .6rem 0 .6rem;
-                outline: none;
-                &:hover {
-                    background-color: darken($primary, 7%);
-                }
-            }
+            @include buttons ($border-radius)
         }
     }
 }
@@ -38,13 +27,73 @@
 .navbar {
     ul {
         list-style: none;
+        margin: .4rem 0;
         li {
-            margin: 0 .7rem;
+            margin: .3rem 0.7rem;
         }
         li a {
             text-decoration: none;
             color: $black;
             font-weight: 700;
+        }
+    }
+}
+
+//*********Home Landing Page*****//
+.content-page {
+    position: relative;
+    margin: 2rem 0;
+    .selection-box {
+        text-align: center;
+        border: 1px solid $text-color;
+        width: 50%;
+        margin: .7rem auto;
+        padding: 10px 30px;
+        border-radius: 30px;
+        span:nth-child(1) {
+            margin: 0 3rem 0 -3rem;
+            font-weight: 900;
+            input {
+                margin: 0 1rem;
+                padding: .4rem;
+            }
+        }
+        span:nth-child(2) {
+            input {
+                border-radius: 20px;
+                border: solid 1px $primary;
+                padding: .4rem 3.8rem;
+                // width: 30%;
+            }
+        }
+    }
+}
+
+.home__content {
+    margin: .4rem auto;
+    padding: .2rem 2rem;
+    display: flex;
+    // flex-flow: row wrap;
+    // @include displayCenter();
+    &-info {
+        margin: 2.3rem 0 0 1rem;
+        h1 {
+            font-size: 3rem;
+            span {
+                color: $primary;
+            }
+        }
+        p {
+            margin: 0 0 2rem 0;
+        }
+        @include buttons($border-radius);
+    }
+    &-img {
+        margin: 0.3rem 0rem 0 10rem;
+        img {
+            margin: 1rem;
+            height: 300px;
+            width: 500px;
         }
     }
 }
