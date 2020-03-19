@@ -1,10 +1,11 @@
 import React from 'react';
 import Layouts from './layouts/Layouts';
-import "./sass/main.scss"
+import "./sass/main.scss";
+
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Layouts/>
     </div>
   );
