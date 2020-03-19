@@ -5,7 +5,7 @@ import Home from "./Home";
 
 const Layouts = () => {
 	return (
-		<div>
+		<div className="container">
 			<Home />
 		</div>
 	);
