@@ -9,6 +9,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 const Layouts = () => {
 	return (
+
 		<BrowserRouter>
 			<div className="App">
 				<Home />
@@ -19,6 +20,11 @@ const Layouts = () => {
 				</Switch>
 			</div>
 		</BrowserRouter>
+
+
+
+
+
 	);
 };
 

@@ -7,7 +7,11 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.7;
+    line-height: 1.5;
     background-color: $white;
     font-size: 1rem;
+}
+
+.container {
+    margin: 0 auto 0 .5rem;
 }

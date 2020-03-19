@@ -5,32 +5,21 @@
 //NB All main styling goes in here;
 //*******Header section styling*******//
 .header {
-    padding: .2rem .7rem;
+    // display: none;
+    padding: 0.2rem 0.7rem;
     border: 1px solid $text-color;
     &__logo {
-        margin: .4rem 0 0 1.1rem;
+        margin: 0.4rem 0 0 1.1rem;
     }
     &>div:nth-child(1) {
-        margin: 0 0 -.5rem 0;
+        margin: 0rem 0 -0.5rem 0;
     }
     &>div:nth-child(2) {
         float: right;
-        margin: -2.6rem 5rem 0 0;
+        margin: -3rem 5rem 0 0;
         div {
             display: flex;
-            margin: .3rem 0;
-            button {
-                background-color: $primary;
-                padding: 0 20px;
-                border-radius: $border-radius;
-                border: none;
-                color: $white;
-                margin: -.7rem .6rem 0 .6rem;
-                outline: none;
-                &:hover {
-                    background-color: darken($primary, 7%);
-                }
-            }
+            @include buttons ($border-radius)
         }
     }
 }
@@ -38,13 +27,167 @@
 .navbar {
     ul {
         list-style: none;
+        margin: .4rem 0;
         li {
-            margin: 0 .7rem;
+            margin: .3rem 0.7rem;
         }
         li a {
             text-decoration: none;
             color: $black;
             font-weight: 700;
+        }
+    }
+}
+
+//*********Home Landing Page*****//
+.content-page {
+    position: relative;
+    margin: 2rem 0;
+    .selection-box {
+        text-align: center;
+        border: 1px solid $text-color;
+        width: 50%;
+        margin: .7rem auto;
+        padding: 10px 30px;
+        border-radius: 30px;
+        span:nth-child(1) {
+            margin: 0 3rem 0 -3rem;
+            font-weight: 900;
+            input {
+                margin: 0 1rem;
+                padding: .4rem;
+            }
+        }
+        span:nth-child(2) {
+            input {
+                border-radius: 20px;
+                border: solid 1px $primary;
+                padding: .4rem 3.8rem;
+                // width: 30%;
+            }
+        }
+    }
+}
+
+.home__content {
+    margin: .4rem auto;
+    padding: .2rem 2rem;
+    display: flex;
+    &-info {
+        margin: 2.3rem 0 0 1rem;
+        h1 {
+            font-size: 3rem;
+            span {
+                color: $primary;
+            }
+        }
+        p {
+            margin: 0 0 2rem 0;
+        }
+        @include buttons($border-radius);
+    }
+    &-img {
+        margin: 0.3rem 0rem 0 10rem;
+        img {
+            margin: 1rem;
+            height: 300px;
+            width: 500px;
+        }
+    }
+}
+
+//******Card section******//
+.section-a {
+    margin: .5rem auto;
+    position: relative;
+    h2 {
+        font-size: 1.3rem;
+        font-weight: 900;
+        margin: 0 2.3rem;
+        p {
+            position: absolute;
+            background: $secondary;
+            height: 3px;
+            width: 10%;
+            margin: -.4rem 0 0 9rem;
+        }
+    }
+}
+
+.card-section {
+    display: flex;
+    margin: .6rem 0;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px 1px rgb(230, 229, 229);
+    margin: 1rem 1.9rem;
+    padding: 1.5rem .5rem;
+    &__img {
+        text-align: center;
+        img {
+            height: 100px;
+            width: 150px;
+        }
+    }
+    .title {
+        margin: .8rem 0 .5rem 0;
+        font-size: 1.5rem;
+    }
+    .title,
+    .text {
+        padding: 0 1rem;
+    }
+}
+
+//****map & search section****//
+.map {
+    position: relative;
+    &__location {
+        height: 35rem;
+        width: 100%;
+        img {
+            @include setPicture;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    &__find {
+        position: absolute;
+        bottom: 0%;
+        background: $white;
+        right: 0;
+        height: 180px;
+        width: 500px;
+        text-align: center;
+        box-shadow: 0px 0px 4px 0px rgb(230, 229, 229);
+        h5 {
+            font-size: 1.5rem;
+            margin: .7rem 0;
+        }
+        .search-bar {
+            height: 3rem;
+            width: 80%;
+            margin: 2rem auto 0 auto;
+            border-radius: 33px;
+            box-shadow: 0px 0px 4px 1px rgb(230, 229, 229);
+            input {
+                width: 85%;
+                padding: .9rem;
+                border-radius: 33px;
+                border: none;
+                margin: 0 0 0 -2.2rem;
+                outline: none;
+            }
+            button {
+                border-radius: 30px;
+                padding: 1rem .9rem;
+                margin: 0.02rem -2.7rem 0 0;
+                border: none;
+                background: $primary;
+                outline: none;
+            }
         }
     }
 }

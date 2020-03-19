@@ -5,7 +5,7 @@ const NavItem = ({ link, content }) => {
 		<div className="navbar">
 			<ul>
 				<li>
-    <a href={link}>{content}</a>
+					<a href={link}>{content}</a>
 				</li>
 			</ul>
 		</div>

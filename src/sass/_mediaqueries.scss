@@ -1,3 +1,5 @@
+@import "./variables";
+@import "./mixins";
 // ****media query for large desktop view***//
 @media (min-width:1000px) {
     .header {
@@ -11,5 +13,99 @@
     }
     .navbar {
         margin-right: 1rem;
+    }
+}
+
+//******media query for mobile view*******//
+@media (max-width:768px) {
+    //****header****//
+    .header {
+        &>div:nth-child(2) {
+            display: none;
+        }
+    }
+    //***Landing page section****//
+    .home__content {
+        margin: .4rem auto;
+        padding: .2rem 2rem;
+        display: flex;
+        // flex-flow: row wrap;
+        @include displayCenter();
+        &-info {
+            margin: 2.3rem 0 0 1rem;
+            h1 {
+                font-size: 2rem !important;
+                span {
+                    color: $primary;
+                }
+            }
+            p {
+                margin: 0 0 2rem 0;
+            }
+        }
+        &-img {
+            display: none;
+            margin: 0 auto;
+            img {
+                margin: 1rem;
+                height: 100px !important;
+                width: 200px!important;
+            }
+        }
+    }
+    //*****card content*****//
+    .card-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card {
+        .title {
+            margin: .8rem 0 .5rem 0;
+            font-size: 1.4rem;
+        }
+    }
+    // .search-bar {
+    //     height: 3rem;
+    //     width: 60%;
+    //     margin: 2rem auto 0 auto;
+    //     border-radius: 33px;
+    //     box-shadow: 0px 0px 4px 1px rgb(230, 229, 229);
+    //     input {
+    //         width: 85%;
+    //         padding: .9rem;
+    //         border-radius: 33px;
+    //         border: none;
+    //         margin: 0 0 0 -2.2rem;
+    //         outline: none;
+    //     }
+    //     button {
+    //         border-radius: 30px;
+    //         padding: 1rem .9rem;
+    //         margin: 0.02rem -2.7rem 0 0;
+    //         border: none;
+    //         background: $primary;
+    //         outline: none;
+    //     }
+    // }
+}
+
+//******media query for Tablet view*******//
+@media (max-width:1085px) {
+    //****header****//
+    //***Landing page section****//
+    .home__content {
+        &-info {
+            margin: 2.3rem 0 0 1rem;
+            h1 {
+                font-size: 1.7rem !important;
+                margin: .2rem 0;
+                span {
+                    color: $primary;
+                }
+            }
+            p {
+                // margin: 0 0 2rem 0;
+            }
+        }
     }
 }
