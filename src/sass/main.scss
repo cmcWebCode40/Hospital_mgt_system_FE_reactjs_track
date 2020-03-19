@@ -5,21 +5,36 @@
 //NB All main styling goes in here;
 //*******Header section styling*******//
 .header {
-    // display: none;
-    padding: 0.2rem 0.7rem;
-    border: 1px solid $text-color;
+    height: 50px;
+    border-bottom: 1px solid $text-color;
     &__logo {
-        margin: 0.4rem 0 0 1.1rem;
+        margin: 0.8rem 0 0 1.1rem;
+        span:nth-child(1) {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $secondary
+        }
+        span:nth-child(2) {
+            background: $primary;
+            color: $white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: .4rem 0.3rem;
+            border-radius: 10px;
+            margin: 0 .2rem;
+        }
     }
     &>div:nth-child(1) {
-        margin: 0rem 0 -0.5rem 0;
+        // margin: 0rem 0 -0.5rem 0;
     }
     &>div:nth-child(2) {
         float: right;
         margin: -3rem 5rem 0 0;
+        padding: .5rem 0;
         div {
             display: flex;
-            @include buttons ($border-radius)
+            @include buttons ($border-radius);
+            padding: -.3rem 1rem;
         }
     }
 }
