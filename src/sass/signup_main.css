@@ -45,3 +45,120 @@ ul{
     letter-spacing: normal;
     color: #ffffff;
 }
+.pharmacy-container{
+    width: 90%;
+    margin: auto;
+}
+.pharmacy-signup-header{
+    padding: 30px;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.62;
+    letter-spacing: normal;
+    text-align: left;
+    text-decoration: underline;
+    color: #08153e;
+}
+.houseImage-div{
+    width: 40%;
+    float: left;
+    margin: auto;
+}
+img[alt='Pharmacy Image']{
+    margin-top: 10%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.formDiv{
+    width: 60%;
+    float: left;
+    /*display: block;
+    margin-right: auto;
+    margin-left: auto;*/
+}
+input[name='center_name']{
+    width: 80%;
+    height: 60px;
+    border-radius: 36px;
+    border: solid 1px #707070;
+    background-color: #ffffff;
+    padding: 25px;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.62;
+    letter-spacing: normal;
+    text-align: left;
+    color: #08153e;
+}
+.input-half{
+    width: 50%;
+    float: left;
+}
+.second-child, .third-child{
+    width: 80%;
+}
+.input-half > input {
+    width: 90%;
+    height: 60px;
+    border-radius: 36px;
+    border: solid 1px #707070;
+    background-color: #ffffff;
+    margin-top: 15px;
+    padding: 25px;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.62;
+    letter-spacing: normal;
+    text-align: left;
+    color: #08153e;
+}
+.checkbox-div{
+    float: left;
+    width: 629px;
+    height: 76px;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 200;
+    font-stretch: normal;
+    font-style: italic;
+    line-height: 1.64;
+    letter-spacing: normal;
+    text-align: left;
+    color: #08153e;
+}
+.button-div{
+    clear: left;
+    width: 80%;
+}
+.button-div > button{
+    float: right;
+    width: 236px;
+    height: 60px;
+    border-radius: 45px;
+    box-shadow: 0 3px 6px 0 #92a7e8;
+    background-color: #4cd9d9;
+    font-family: Poppins;
+    font-size: 29px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.62;
+    letter-spacing: normal;
+    text-align: center;
+    color: #08153e;
+
+
+}
+.right-div > input{
+    float: right;
+}
