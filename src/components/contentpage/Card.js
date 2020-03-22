@@ -11,8 +11,8 @@ const Card = () => {
 				What we Do <p></p>
 			</h2>
 			<div className="card-section">
-				<div className="card">
-					<div className="card__img">
+				<div className="box">
+					<div className="box__img">
 						<img className="image" src={hospital} alt="hospital" />
 					</div>
 					<div className="title">
@@ -24,8 +24,8 @@ const Card = () => {
 						incidunt illum debitis. Doloremque quae adipisci assumenda.
 					</div>
 				</div>
-				<div className="card">
-					<div className="card__img">
+				<div className="box">
+					<div className="box__img">
 						<img src={pharmacy} alt="hospital" />
 					</div>
 					<div className="title">
@@ -37,8 +37,8 @@ const Card = () => {
 						incidunt illum debitis. Doloremque quae adipisci assumenda.
 					</div>
 				</div>
-				<div className="card">
-					<div className="card__img">
+				<div className="box">
+					<div className="box__img">
 						<img src={consultant} alt="hospital" />
 					</div>
 					<div className="title">
