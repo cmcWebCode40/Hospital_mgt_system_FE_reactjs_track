@@ -54,28 +54,11 @@ const News = () => {
 									/>
 								</div>
 							</div>
-							<div class=" col-md-4">
-								<div class="card mb-2">
-									<img
-										class="card-img-top"
-										src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
-										alt="Card image cap"
-									/>
-								</div>
-							</div>
-							<div class=" col-md-4">
-								<div class="card mb-2">
-									<img
-										class="card-img-top"
-										src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
-										alt="Card image cap"
-									/>
-								</div>
-							</div>
 						</div>
 					</div>
 
 					<div class="carousel-item">
+						<div className="row">
 						<div class=" col-md-4">
 							<div class="card mb-2">
 								<img
@@ -85,8 +68,9 @@ const News = () => {
 								/>
 							</div>
 						</div>
+						</div>
 					</div>
-					<div class="carousel-item">
+					{/* <div class="carousel-item">
 						<div class=" col-md-4">
 							<div class="card mb-2">
 								<img
@@ -107,7 +91,7 @@ const News = () => {
 								/>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 
 				{/* <div class="carousel-item">

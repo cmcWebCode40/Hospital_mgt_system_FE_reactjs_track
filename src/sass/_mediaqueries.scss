@@ -1,7 +1,7 @@
 @import "./variables";
 @import "./mixins";
 // ****media query for large desktop view***//
-@media (min-width:1000px) {
+@media (min-width: 1000px) {
     .header {
         &>div:nth-child(2) {
             float: right;
@@ -17,7 +17,7 @@
 }
 
 //******media query for mobile view*******//
-@media (max-width:768px) {
+@media (max-width: 768px) {
     //****header****//
     .header {
         &>div:nth-child(2) {
@@ -26,8 +26,8 @@
     }
     //***Landing page section****//
     .home__content {
-        margin: .4rem auto;
-        padding: .2rem 2rem;
+        margin: 0.4rem auto;
+        padding: 0.2rem 2rem;
         display: flex;
         // flex-flow: row wrap;
         @include displayCenter();
@@ -49,7 +49,7 @@
             img {
                 margin: 1rem;
                 height: 100px !important;
-                width: 200px!important;
+                width: 200px !important;
             }
         }
     }
@@ -60,37 +60,41 @@
     }
     .card {
         .title {
-            margin: .8rem 0 .5rem 0;
+            margin: 0.8rem 0 0.5rem 0;
             font-size: 1.4rem;
         }
     }
-    // .search-bar {
-    //     height: 3rem;
-    //     width: 60%;
-    //     margin: 2rem auto 0 auto;
-    //     border-radius: 33px;
-    //     box-shadow: 0px 0px 4px 1px rgb(230, 229, 229);
-    //     input {
-    //         width: 85%;
-    //         padding: .9rem;
-    //         border-radius: 33px;
-    //         border: none;
-    //         margin: 0 0 0 -2.2rem;
-    //         outline: none;
-    //     }
-    //     button {
-    //         border-radius: 30px;
-    //         padding: 1rem .9rem;
-    //         margin: 0.02rem -2.7rem 0 0;
-    //         border: none;
-    //         background: $primary;
-    //         outline: none;
-    //     }
-    // }
+    .content-page {
+        .selection-box {
+            box-shadow: 0px 0px 4px 3px rgb(230, 229, 229) !important;
+            margin: 1.3rem auto !important;
+            width: 100% !important;
+            border: none !important;
+            span:nth-child(1) {
+                margin: 1rem 1rem !important;
+                font-weight: 500 !important;
+                input {
+                    margin: 1.3rem 1rem !important;
+                }
+            }
+            span:nth-child(2) {
+                input {
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .btn-floating {
+        position: absolute;
+        margin: 2.5rem 0;
+        // top: 75%;
+        bottom: 100%;
+        left: 54% !important;
+    }
 }
 
 //******media query for Tablet view*******//
-@media (max-width:1085px) {
+@media (max-width: 1085px) {
     //****header****//
     //***Landing page section****//
     .home__content {
@@ -98,7 +102,7 @@
             margin: 2.3rem 0 0 1rem;
             h1 {
                 font-size: 1.7rem !important;
-                margin: .2rem 0;
+                margin: 0.2rem 0;
                 span {
                     color: $primary;
                 }
