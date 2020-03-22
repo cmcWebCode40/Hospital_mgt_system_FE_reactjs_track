@@ -5,6 +5,20 @@
     flex-flow: column nowrap;
 }
 
+.button {
+    background-color: $primary;
+    padding: 12px 35px;
+    border-radius: 3rem;
+    border: none;
+    color: #000;
+    outline: none;
+    font-weight: 900;
+    cursor: pointer;
+    &:hover {
+        background-color: darken($primary, 7%);
+    }
+}
+
 @mixin buttons($borderRadius) {
     button {
         background-color: $primary;
@@ -14,6 +28,7 @@
         color: #000;
         outline: none;
         font-weight: 900;
+        cursor: pointer;
         &:hover {
             background-color: darken($primary, 7%);
         }

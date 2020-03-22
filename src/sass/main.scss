@@ -25,16 +25,14 @@
         }
     }
     &>div:nth-child(1) {
-        // margin: 0rem 0 -0.5rem 0;
+        margin: 0rem 0 -0.5rem 0;
     }
     &>div:nth-child(2) {
         float: right;
         margin: -3rem 5rem 0 0;
-        padding: .5rem 0;
-        div {
-            display: flex;
-            @include buttons ($border-radius);
-            padding: -.3rem 1rem;
+        // padding: .5rem 0;
+        a {
+            margin: 1rem 0 1rem;
         }
     }
 }
@@ -42,9 +40,9 @@
 .navbar {
     ul {
         list-style: none;
-        margin: .4rem 0;
+        margin: .8rem 0;
         li {
-            margin: .3rem 0.7rem;
+            // margin: 0rem 0.7rem;
         }
         li a {
             text-decoration: none;
@@ -99,7 +97,6 @@
         p {
             margin: 0 0 2rem 0;
         }
-        @include buttons($border-radius);
     }
     &-img {
         margin: 0.3rem 0rem 0 10rem;
@@ -134,7 +131,7 @@
     margin: .6rem 0;
 }
 
-.card {
+.box {
     border-radius: 10px;
     box-shadow: 0px 0px 4px 1px rgb(230, 229, 229);
     margin: 1rem 1.9rem;
@@ -206,3 +203,61 @@
         }
     }
 }
+
+//*****News and stories section*****//
+.news-page {
+    position: relative;
+    margin: 1rem 1rem 0 1rem;
+    div {
+        margin: .2rem 0 0 0;
+        // padding: .5rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    .view {
+        background-color: #f4f4f4;
+        color: $black;
+        padding: .8rem 1.3rem;
+        float: right;
+        margin: -2.9rem 0;
+        border-radius: 6px;
+    }
+    .btn-floating {
+        position: absolute;
+        margin: 2rem 0;
+        // top: 75%;
+        bottom: 100%;
+        left: 25%;
+        &:nth-child(1) {
+            margin: 1rem 3rem -.2rem 0;
+            background-color: $white;
+            color: $black;
+            border: #f4f4f4 solid;
+            padding: 8px 15px;
+            border-radius: 50%;
+        }
+        &:nth-child(2) {
+            margin: -1rem 0 0 3rem;
+            background-color: $primary;
+            color: $white;
+            padding: 8px 15px;
+            border-radius: 50%;
+        }
+    }
+}
+
+.card {
+    border: none;
+    margin: -.8rem;
+    img {
+        height: 100%;
+    }
+}
+
+// .carousel {
+//     position: relative;
+// }
+// .carousel-inner {
+//     position: absolute;
+// }

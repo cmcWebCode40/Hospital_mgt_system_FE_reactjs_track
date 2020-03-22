@@ -21,11 +21,6 @@ const Layouts = () => {
 				</Switch>
 			</div>
 		</BrowserRouter>
-
-
-
-
-
 	);
 };
 

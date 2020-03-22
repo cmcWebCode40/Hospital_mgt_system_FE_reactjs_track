@@ -11,7 +11,7 @@ const Header = () => {
 			<div>
                 <div>
                 <NavItems />
-                <button>LOGIN</button>
+                <a  href="www.test.com" className="button">LOGIN</a>
                 </div>
 				
 			</div>
