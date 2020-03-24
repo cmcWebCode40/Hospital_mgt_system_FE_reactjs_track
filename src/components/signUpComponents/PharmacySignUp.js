@@ -40,7 +40,7 @@ class PharmacySignUp extends Component {
         console.log(this.state.checked);
         return (
             <div className='pharmacy-container'> 
-                <div className='pharmacy-signup-header'>SIGN UP AS A PHARMACEUTICAL CENTER: Please complete the form below</div>
+                <div className='signup-header'>SIGN UP AS A PHARMACEUTICAL CENTER: Please complete the form below</div>
                 <div className='houseImage-div'>
                     <img src={pharmacy_image} width='499px' height='362px' alt='Pharmacy Image'/>
                 </div>

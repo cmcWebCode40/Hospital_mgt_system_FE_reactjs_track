@@ -45,11 +45,17 @@ ul{
     letter-spacing: normal;
     color: #ffffff;
 }
-.pharmacy-container{
+a{
+    text-decoration: none;
+}
+.pharmacy-container, 
+.hospital-container, 
+.doctor-container, 
+.patient-container{
     width: 90%;
     margin: auto;
 }
-.pharmacy-signup-header{
+.signup-header{
     padding: 30px;
     font-family: Poppins;
     font-size: 30px;
@@ -67,7 +73,7 @@ ul{
     float: left;
     margin: auto;
 }
-img[alt='Pharmacy Image']{
+img[alt='Pharmacy Image'], img[alt='Patient Image']{
     margin-top: 10%;
     display: block;
     margin-right: auto;
@@ -80,7 +86,7 @@ img[alt='Pharmacy Image']{
     margin-right: auto;
     margin-left: auto;*/
 }
-input[name='center_name']{
+input[name='center_name'], input[name='title']{
     width: 80%;
     height: 60px;
     border-radius: 36px;
@@ -112,6 +118,24 @@ input[name='center_name']{
     background-color: #ffffff;
     margin-top: 15px;
     padding: 25px;
+    font-family: Poppins;
+    font-size: 25px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.62;
+    letter-spacing: normal;
+    text-align: left;
+    color: #08153e;
+}
+select[name='sex']{
+    width: 90%;
+    height: 60px;
+    border-radius: 36px;
+    border: solid 1px #707070;
+    background-color: #ffffff;
+    margin-top: 15px;
+    padding-left: 25px;
     font-family: Poppins;
     font-size: 25px;
     font-weight: 300;
@@ -159,6 +183,6 @@ input[name='center_name']{
 
 
 }
-.right-div > input{
+.right-div > input, select{
     float: right;
 }
