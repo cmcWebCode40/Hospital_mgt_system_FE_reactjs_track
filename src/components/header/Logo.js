@@ -1,12 +1,12 @@
-import React from 'react';
-import logoImage from '../../images/undraw_exams_g4ow.svg';
+import React from "react";
+
 
 const Logo = () => {
-    return (
-        <div className="header__logo">
-          <img src={logoImage} alt="App logo" height="50" width="50"/> 
-        </div>
-    )
-}
+	return (
+		<div className="header__logo">
+			<span>MED</span><span>PADI</span>
+		</div>
+	);
+};
 
-export default Logo
+export default Logo;

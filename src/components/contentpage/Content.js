@@ -12,7 +12,7 @@ const Content = () => {
 					<p>
 						We make healthcare possible in the world most impossible places <br/> and help you locate nearest hospitals and pharmacies near you with <br/> online consultations.
 					</p>
-					<button>GET STARTED</button>
+					<a href="www.notin.com" className="button">GET STARTED</a>
 				</div>
 				<div className="home__content-img">
 					<img src={homeImg} alt="emergency" />

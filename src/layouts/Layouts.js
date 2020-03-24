@@ -1,5 +1,6 @@
 import React from "react";
 import Home from "./Home";
+import Header from '../components/header/Header'
 import "../sass/signup_main.css";
 import SignUp from '../components/signUpComponents/SignUp'
 import PharmacySignUp from '../components/signUpComponents/PharmacySignUp';
@@ -16,6 +17,7 @@ const Layouts = () => {
 
 		<BrowserRouter>
 			<div className="App">
+
 				<Header/>
 				<Switch>
 					<Route exact path="/" component={Home}/>
@@ -24,14 +26,16 @@ const Layouts = () => {
 					<Route path="/signup-hospital" component={HospitalSignUp} />
 					<Route path="/signup-doctor" component={DoctorSignUp} />
 					<Route path="/signup-patient" component={PatientSignUp} />
+
+
+
+
+
+
+
 				</Switch>
 			</div>
 		</BrowserRouter>
-
-
-
-
-
 	);
 };
 
