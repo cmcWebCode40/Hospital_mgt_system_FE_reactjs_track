@@ -7,34 +7,34 @@ const News = () => {
 				<h4>
 					News & Stories <span>|</span>
 				</h4>
-				<a href="#" className="view">
+				<a href="www.tec.com" className="view">
 					View All
 				</a>
 			</div>
 			<div
 				id="carousel-example-multi"
-				class="carousel slide carousel-multi-item v-2"
+				className="carousel slide carousel-multi-item v-2"
 				data-ride="carousel">
-				<div class="controls-top">
+				<div className="controls-top">
 					<a
-						class="btn-floating"
+						className="btn-floating"
 						href="#carousel-example-multi"
 						data-slide="prev">
-						<i class="fas fa-chevron-left"></i>
+						<i className="fas fa-chevron-left"></i>
 					</a>
 					<a
-						class="btn-floating"
+						className="btn-floating"
 						href="#carousel-example-multi"
 						data-slide="next">
-						<i class="fas fa-chevron-right"></i>
+						<i className="fas fa-chevron-right"></i>
 					</a>
 				</div>
 
-				<ol class="carousel-indicators">
+				<ol className="carousel-indicators">
 					<li
 						data-target="#carousel-example-multi"
 						data-slide-to="0"
-						class="active"></li>
+						className="active"></li>
 					<li data-target="#carousel-example-multi" data-slide-to="1"></li>
 					<li data-target="#carousel-example-multi" data-slide-to="2"></li>
 					<li data-target="#carousel-example-multi" data-slide-to="3"></li>
@@ -42,98 +42,98 @@ const News = () => {
 					<li data-target="#carousel-example-multi" data-slide-to="5"></li>
 				</ol>
 
-				<div class="carousel-inner v-2 " role="listbox">
-					<div class="carousel-item active">
+				<div className="carousel-inner v-2 " role="listbox">
+					<div className="carousel-item active">
 						<div className="row">
-							<div class=" col-md-4">
-								<div class="card mb-2">
+							<div className=" col-md-4">
+								<div className="card mb-2">
 									<img
-										class="card-img-top"
+										className="card-img-top"
 										src="https://mdbootstrap.com/img/Photos/Others/img (36).jpg"
-										alt="Card image cap"
+										alt="Card  cap"
 									/>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class="carousel-item">
+					<div className="carousel-item">
 						<div className="row">
-						<div class=" col-md-4">
-							<div class="card mb-2">
+						<div className=" col-md-4">
+							<div className="card mb-2">
 								<img
-									class="card-img-top"
+									className="card-img-top"
 									src="https://mdbootstrap.com/img/Photos/Others/img (31).jpg"
-									alt="Card image cap"
+									alt="Card  cap"
 								/>
 							</div>
 						</div>
 						</div>
 					</div>
-					{/* <div class="carousel-item">
-						<div class=" col-md-4">
-							<div class="card mb-2">
+					{/* <div className="carousel-item">
+						<div className=" col-md-4">
+							<div className="card mb-2">
 								<img
-									class="card-img-top"
+									className="card-img-top"
 									src="https://mdbootstrap.com/img/Photos/Others/img (34).jpg"
-									alt="Card image cap"
+									alt="Card  cap"
 								/>
 							</div>
 						</div>
 					</div>
-					<div class="carousel-item">
-						<div class=" col-md-4">
-							<div class="card mb-2">
+					<div className="carousel-item">
+						<div className=" col-md-4">
+							<div className="card mb-2">
 								<img
-									class="card-img-top"
+									className="card-img-top"
 									src="https://mdbootstrap.com/img/Photos/Others/img (34).jpg"
-									alt="Card image cap"
+									alt="Card  cap"
 								/>
 							</div>
 						</div>
 					</div> */}
 				</div>
 
-				{/* <div class="carousel-item">
-						<div class=" col-md-4">
-							<div class="card mb-2">
+				{/* <div className="carousel-item">
+						<div className=" col-md-4">
+							<div className="card mb-2">
 								<img
-									class="card-img-top"
+									className="card-img-top"
 									src="https://mdbootstrap.com/img/Photos/Others/img (33).jpg"
-									alt="Card image cap"
+									alt="Card  cap"
 								/>
 							</div>
 						</div>
 					</div>
-					<div class="carousel-item">
-						<div class="col-12 col-md-4">
-							<div class="card mb-2">
+					<div className="carousel-item">
+						<div className="col-12 col-md-4">
+							<div className="card mb-2">
 								<img
-									class="card-img-top"
+									className="card-img-top"
 									src="https://mdbootstrap.com/img/Photos/Others/img (14).jpg"
-									alt="Card image cap"
+									alt="Card  cap"
 								/>
 							</div>
 						</div>
 					</div>
-					<div class="carousel-item">
-						<div class="col-12 col-md-4">
-							<div class="card mb-2">
+					<div className="carousel-item">
+						<div className="col-12 col-md-4">
+							<div className="card mb-2">
 								<img
-									class="card-img-top"
+									className="card-img-top"
 									src="https://mdbootstrap.com/img/Photos/Others/img (15).jpg"
-									alt="Card image cap"
+									alt="Card  cap"
 								/>
 							</div>
 						</div>
 					</div>
-					<div class="carousel-item">
-						<div class="col-12 col-md-4">
-							<div class="card mb-2">
+					<div className="carousel-item">
+						<div className="col-12 col-md-4">
+							<div className="card mb-2">
 								<img
-									class="card-img-top"
+									className="card-img-top"
 									src="https://mdbootstrap.com/img/Photos/Others/img (35).jpg"
-									alt="Card image cap"
+									alt="Card  cap"
 								/>
 							</div>
 						</div>
