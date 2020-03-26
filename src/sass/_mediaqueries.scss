@@ -1,21 +1,5 @@
 @import "./variables";
 @import "./mixins";
-// ****media query for large desktop view***//
-@media (min-width: 1000px) {
-    .header {
-        &>div:nth-child(2) {
-            float: right;
-            margin: -2.6rem 6.5rem 0 0;
-            div {
-                display: flex;
-            }
-        }
-    }
-    .navbar {
-        margin-right: 1rem;
-    }
-}
-
 //******media query for mobile view*******//
 @media (max-width: 768px) {
     //****header****//
@@ -24,12 +8,25 @@
             display: none;
         }
     }
+    //***Nav Bar ****//
+    .navbar {
+        ul {
+            li a {
+                text-decoration: none;
+                color: $white !important;
+                font-size: 1.3rem;
+                font-weight: 300;
+            }
+        }
+    }
+    .menu {
+        display: block !important;
+    }
     //***Landing page section****//
     .home__content {
         margin: 0.4rem auto;
         padding: 0.2rem 2rem;
         display: flex;
-        // flex-flow: row wrap;
         @include displayCenter();
         &-info {
             margin: 2.3rem 0 0 1rem;
@@ -67,8 +64,8 @@
     .content-page {
         .selection-box {
             box-shadow: 0px 0px 4px 3px rgb(230, 229, 229) !important;
-            margin: 1.3rem auto !important;
-            width: 100% !important;
+            margin: 2rem auto !important;
+            width: 90% !important;
             border: none !important;
             span:nth-child(1) {
                 margin: 1rem 1rem !important;
@@ -85,11 +82,31 @@
         }
     }
     .btn-floating {
-        position: absolute;
-        margin: 2.5rem 0;
-        // top: 75%;
-        bottom: 100%;
-        left: 54% !important;
+        position: fixed;
+        margin-bottom: -30px;
+        bottom: -30% !important;
+        &:nth-child(1) {
+            left: 10% !important;
+        }
+        &:nth-child(2) {
+            left: 70% !important;
+        }
+    }
+}
+
+// ****media query for large desktop view***//
+@media (min-width: 1000px) {
+    .header {
+        &>div:nth-child(2) {
+            float: right;
+            margin: -2.6rem 6.5rem 0 0;
+            div {
+                display: flex;
+            }
+        }
+    }
+    .navbar {
+        margin-right: 1rem;
     }
 }
 
@@ -106,9 +123,6 @@
                 span {
                     color: $primary;
                 }
-            }
-            p {
-                // margin: 0 0 2rem 0;
             }
         }
     }
